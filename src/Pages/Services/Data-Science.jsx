@@ -1,5 +1,6 @@
 import Footer from '../../Component/Footer'
 import IconChangeCarousel from '../../Component/IconChange-Carousel';
+import { Link } from "react-router-dom";
 import Whatsappfloat from '../../Component/Whatsapp-float';
 
 const codingIcons = [
@@ -28,7 +29,9 @@ function DataScienceService({ imageSrc, altText, heading, description }) {
       />
       <h3>{heading}</h3>
       <p>{description}</p>
-      <button className="service-button">Learn More</button>
+     <Link to="/contact">
+  <button className='service-button'>Learn More</button>
+</Link>
     </div>
   );
 }
@@ -40,7 +43,9 @@ function DataScienceTalent(){
       <div id="datascience-Talent-second-container">
         <h2>Unlock Insights with Advanced Data Science Solutions</h2>
         <p>Transform your data into actionable intelligence with our cutting-edge analytics, machine learning, and predictive modeling services.</p>
-        <button>Get More Info</button>
+         <Link to="/contact">
+  <button>Get in Touch</button>
+</Link>
       </div>
     </div>
     </>

@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+
 import TechBoxIMG1 from '../assets/techbox1.png';
 import TechBoxIMG2 from '../assets/techbox2.png';
 import TechBoxIMG3 from '../assets/techbox3.png';
@@ -59,7 +61,6 @@ function HomeManage() {
     startAutoRotate(); // Reset timer on click
   };
 
-  // Helper function for button color based on active box
   const getButtonColor = (index) => {
     switch (index) {
       case 0: return '#133b84';  
@@ -90,11 +91,21 @@ function HomeManage() {
         <div className="content-left">
           <h2>{bottomSlides[currentSlide].heading}</h2>
           <p>{bottomSlides[currentSlide].text}</p>
-          <button 
-            style={{ backgroundColor: getButtonColor(currentSlide) }}
+          <Link 
+            to="/contact" 
+            className="contact-button"
+            style={{
+              backgroundColor: getButtonColor(currentSlide),
+              textDecoration: 'none',
+              color: '#fff',
+              padding: '10px 20px',
+              borderRadius: '4px',
+              display: 'inline-block',
+              marginTop: '10px'
+            }}
           >
             {bottomSlides[currentSlide].buttonText}
-          </button>
+          </Link>
         </div>
         <div className="content-right">
           <img src={bottomSlides[currentSlide].image} alt="Slide" />

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Banner from "../../assets/Graphics-page-banner.png"
 import Footer from "../../Component/Footer"
 import Whatsappfloat from "../../Component/Whatsapp-float";
+import { Link } from "react-router-dom";
+
 
 function GraphicServiceCard({ image, title, description }) {
   return (
@@ -73,7 +75,9 @@ const cardData = [
           <div id="graphic-page-header-left">
             <h1>ELEGANT, ON TREND DESIGNS</h1>
             <p>We bring you the goodness of charismatic designs.</p>
-            <button>Learn More</button>
+            <Link to="/contact">
+  <button>Learn More</button>
+</Link>
           </div>
           <div id="graphic-page-header-right">
             <img

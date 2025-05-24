@@ -3,6 +3,8 @@ import UIUXBanner from "../../assets/uiUXBanner.png"
 import Footer from "../../Component/Footer"
 import AfterHeaderRightImage from "../../assets/UIUX-after-header-right.png"
 import Whatsappfloat from "../../Component/Whatsapp-float"
+import { Link } from "react-router-dom";
+
 
 
 function UIUXCard({ imageSrc, heading, description, bgColor = "#ffffff" }) {
@@ -42,7 +44,9 @@ function UIUXDesign() {
         <div id="ui-ux-header-second-main-container">
           <h1>Top UI UX Design Services</h1>
           <p>Solve the pressing product design challenges with InvoZone’s UI/UX and design wizards.</p>
-          <button>Schedule a Demo</button>
+          <Link to="/contact">
+  <button>Learn More</button>
+</Link>
         </div>
       </div>
       <div id="ui-ux-after-header-main-container">

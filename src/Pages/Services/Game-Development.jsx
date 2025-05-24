@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Footer from "../../Component/Footer"
+import { Link } from 'react-router-dom';
 import Whatsappfloat from '../../Component/Whatsapp-float';
 
 function GameDevelopment() {
@@ -80,7 +81,9 @@ function GameDevelopment() {
         <div id="gamepage-create-second-container">
           <h2>Let’s create something extraordinary together!</h2>
           <p>Let’s bring your vision to life and create something remarkable. Together, we can achieve the extraordinary.</p>
-          <button>Contact Us</button>
+          <Link to="/contact">
+  <button>Contact Us</button>
+</Link>
         </div>
       </div>
 
