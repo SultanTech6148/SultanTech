@@ -66,15 +66,15 @@ function Footer() {
             <div id="footer-contact-container">
               <div id="footer-contact-left">
                 <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" alt="Phone-Icon" />
-                <h6>+92 123 123 123</h6>
+                <h6>+92 3462019181</h6>
               </div>
               <div id="footer-contact-right">
                 <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=FFFFFF" alt="email icon" />
-                <h6>abc@gmail.com</h6>
+                <h6>sultantech.org@gmail.com</h6>
               </div>
             </div>
-            <h6>Terms & Condition</h6>
-            <h6>Privacy Policy</h6>
+            {/* <h6>Terms & Condition</h6>
+            <h6>Privacy Policy</h6> */}
           </div>
         </div>
       </div>

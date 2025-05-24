@@ -1,5 +1,6 @@
 
 import Footer from "../../Component/Footer"
+import Whatsappfloat from "../../Component/Whatsapp-float";
 
 
 function SeoCard({ image, heading, text }) {
@@ -43,23 +44,25 @@ function Seo() {
       <div id="seo-service-box-container">
         <div id="seo-service-box-second-container">
            <SeoCard 
-        image="	https://www.mainstreethost.com/wp-content/uploads/2021/04/map-and-marker.svg" 
+        image="https://img.icons8.com/?size=100&id=42444&format=png&color=FFFFFF" 
         heading="Local SEO" 
         text="If you hope to dominate, you need a complete local SEO strategy that drives and delivers results." 
       />
       <SeoCard 
-        image="	https://www.mainstreethost.com/wp-content/uploads/2021/04/gears.svg" 
+        image="	https://img.icons8.com/?size=100&id=42205&format=png&color=FFFFFF" 
         heading="Technical SEO" 
         text="Technical SEO provides businesses with the foundation required to scale marketing success." 
       />
       <SeoCard 
-        image="	https://www.mainstreethost.com/wp-content/uploads/2021/04/table-and-graph.svg" 
+        image="https://img.icons8.com/?size=100&id=42220&format=png&color=FFFFFF" 
         heading="SEO Analytics" 
         text="All of our SEO services feature a basic analytics package. If you're ready for a bit more, explore!" 
       />
         </div>
       </div>
       <Footer/>
+      <Whatsappfloat/>
+
     </div>
   )
 }

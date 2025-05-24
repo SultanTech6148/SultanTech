@@ -1071,14 +1071,25 @@ body {
 
 
 #contact-bottom-container{
-  height: 300px;
+  height: fit-content;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin: 20px 0;
+  margin-top: -40px;
 }
-
+#contact-bottom-second-container{
+  height: fit-content;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendly-inline-widget{
+  min-width: 100% !important;
+}
 @media (max-width: 600px) {
   #contact-page-top-container{
     padding: 0;
@@ -1094,6 +1105,9 @@ body {
     font-size: medium;
     width: 90%;
   }
+#contact-bottom-container{
+  margin-top: 20px;
+}
 }
 
 
@@ -2394,15 +2408,20 @@ body {
   display: flex;
   margin: 20px 0;
   justify-content: center;
-  background-image: url("./assets/Software-Techs.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 30px 0;
-  background-clip: border-box;
   align-items: center;
 }
-
+#software-page-before-footer-image-container img{
+  height: 100%;
+  width: 90%;
+  object-fit: contain;
+}
+@media (max-width: 600px) {
+#software-page-before-footer-image-container{
+  height: 150px;
+  padding: 0;
+  /* margin: 0; */
+}
+}
 
 /* SEO PAGE */
 #seo-page-header-main {
@@ -2576,22 +2595,23 @@ body {
 #seo-card-box {
   height: 350px;
   width: 300px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
   display: flex;
   transition: all 0.5s ease;
+  background-color: #007bff;
   justify-content: center;
   padding: 0 20px;
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 10px;
 }
 
 .seo-card-image {
   width: 100%;
   height: auto;
-  max-height: 150px;
+  max-height: 100px;
   object-fit: contain;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -2601,13 +2621,13 @@ body {
 .seo-card-heading {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #007bff;
+  color: #FFF;
   text-align: center;
 }
 
 .seo-card-text {
   font-size: 16px;
-  color: #555;
+  color: #FFF;
   text-align: center;
 }
 
@@ -3180,4 +3200,27 @@ body {
     #ui-ux-banner-main-container {
         display: none;
     }
+}
+
+/* Whatsapp Float */
+#whatsapp-float-main-container{
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 90000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#whatsapp-float-main-container img{
+  height: 80px;
+  width: auto;
+  transform: scale(0.9);
+  object-fit: contain;
+  transition: all 0.2s;
+}
+#whatsapp-float-main-container img:hover{
+  transform: scale(1);
 }

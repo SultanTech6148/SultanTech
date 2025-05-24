@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Footer from "../../Component/Footer"
+import Whatsappfloat from '../../Component/Whatsapp-float';
 
 function GameDevelopment() {
   const fullText = "OUR games development studio DEVELOP GAMES FOR THESE KEY PLATFORMS";
@@ -84,6 +85,8 @@ function GameDevelopment() {
       </div>
 
       <Footer/>
+      <Whatsappfloat/>
+
     </div>
   );
 }

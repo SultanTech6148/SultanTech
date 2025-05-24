@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import IconChangeCarousel from "../../Component/IconChange-Carousel"
 import Footer from '../../Component/Footer';
+import Whatsappfloat from '../../Component/Whatsapp-float';
 
 function FAQ({ items }) {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -186,6 +187,8 @@ function WebDevelopement() {
       <div id="web-dev-image-main-container">{/* Optional graphic or image */}</div>
       <FAQ items={faqItems} />
       <Footer />
+      <Whatsappfloat/>
+
     </div>
   );
 }

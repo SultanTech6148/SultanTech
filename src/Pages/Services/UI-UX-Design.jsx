@@ -1,6 +1,8 @@
 import IconChangeCarousel from "../../Component/IconChange-Carousel"
 import UIUXBanner from "../../assets/uiUXBanner.png"
 import Footer from "../../Component/Footer"
+import AfterHeaderRightImage from "../../assets/UIUX-after-header-right.png"
+import Whatsappfloat from "../../Component/Whatsapp-float"
 
 
 function UIUXCard({ imageSrc, heading, description, bgColor = "#ffffff" }) {
@@ -51,7 +53,7 @@ function UIUXDesign() {
 
           </div>
           <div id="ui-ux-after-right">
-            <img src="https://cdn.prod.website-files.com/678ccce8ba65076a9fdb8a49/67c976dcf13d469e9d7c3306_Group%202.svg" alt="" />
+            <img src={AfterHeaderRightImage} alt="" />
           </div>
         </div>
       </div>
@@ -94,6 +96,8 @@ function UIUXDesign() {
         <img src={UIUXBanner} alt="" />
       </div>
       <Footer/>
+      <Whatsappfloat/>
+
     </div>
   )
 }

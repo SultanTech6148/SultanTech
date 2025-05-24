@@ -5,7 +5,7 @@ import HomeManage from '../Component/HomeManage';
 import HomeOurServices from '../Component/HomeOurServices';
 import Footer from '../Component/Footer';
 import IconChangeCarousel from "../Component/IconChange-Carousel"
-
+import Whatsappfloat from '../Component/Whatsapp-float';
 
 function Home() {
 
@@ -44,10 +44,12 @@ function Home() {
     <HomeAfterHeader/>
     <HomeAbout/>
     <HomeOurServices/>
-          <IconChangeCarousel icons={codingIcons} interval={3000} />
+    <IconChangeCarousel icons={codingIcons} interval={3000} />
 
     <HomeManage/>
     <Footer/>
+      <Whatsappfloat/>
+
     </>
   );
 }

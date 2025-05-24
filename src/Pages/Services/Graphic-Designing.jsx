@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Banner from "../../assets/Graphics-page-banner.png"
 import Footer from "../../Component/Footer"
-
+import Whatsappfloat from "../../Component/Whatsapp-float";
 
 function GraphicServiceCard({ image, title, description }) {
   return (
@@ -135,6 +135,8 @@ const cardData = [
 
       </div>
       <Footer/>
+      <Whatsappfloat/>
+
     </div>
   );
 }

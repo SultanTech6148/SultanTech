@@ -1,7 +1,8 @@
 import IconChangeCarousel from "../../Component/IconChange-Carousel"
 import Footer from "../../Component/Footer"
 import MobImage from "../../assets/software-left-after-header.png"
-
+import BeforeFooterimg from "../../assets/Software-Techs.png"
+import Whatsappfloat from "../../Component/Whatsapp-float"
 
 
 
@@ -87,8 +88,11 @@ const codingIcons = [
       <SoftwareCard cards={cardData} />,
       </div>
 
-      <div id="software-page-before-footer-image-container"></div>
+      <div id="software-page-before-footer-image-container">
+        <img src={BeforeFooterimg} alt="" />
+      </div>
       <Footer/>
+      <Whatsappfloat/>
       
     </div>
   )

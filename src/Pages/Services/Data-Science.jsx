@@ -1,5 +1,6 @@
 import Footer from '../../Component/Footer'
 import IconChangeCarousel from '../../Component/IconChange-Carousel';
+import Whatsappfloat from '../../Component/Whatsapp-float';
 
 const codingIcons = [
   "https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000",
@@ -120,6 +121,7 @@ function DataScience() {
         </div>
       </div>
       <Footer/>
+      <Whatsappfloat/>
     </>
   );
 }

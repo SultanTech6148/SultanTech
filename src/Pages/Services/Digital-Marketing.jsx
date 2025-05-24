@@ -1,4 +1,5 @@
 import Footer from "../../Component/Footer"
+import Whatsappfloat from "../../Component/Whatsapp-float";
 
 
 function DigitalServiceCard({ title, description, image, buttonText = "Learn More" }) {
@@ -86,14 +87,16 @@ const services = [
   ))}
 </div>
       </div>
-      <div id="digital-marketing-after-header-main">
+      {/* <div id="digital-marketing-after-header-main">
         <div id="digital-marketing-after-header-second">
           <h4>WE HELP YOU GET NOTICED ONLINE</h4>
           <h2>PAKISTAN BEST DIGITAL MARKETING COMPANY</h2>
           <p>Sultan Tech is one of the leading Digital Marketing Companies in Pakistan, delivering results-driven digital marketing solutions since 2013. We help businesses grow from the ground up—building strong brand identities and transforming them into trusted names for their target audiences. At Sultan Tech, we combine creative strategy with deep industry knowledge, staying ahead of global trends in IT and digital marketing to bring innovative solutions to our clients.</p>
         </div>
-      </div>
+      </div> */}
       <Footer/>
+      <Whatsappfloat/>
+
     </div>
   );
 }
