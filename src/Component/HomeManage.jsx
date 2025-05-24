@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import TechBoxIMG1 from '../assets/techbox1.jpg';
-import TechBoxIMG2 from '../assets/techbox2.jpg';
-import TechBoxIMG3 from '../assets/techbox3.jpg';
-import TechBoxIMG4 from '../assets/techbox4.jpg';
+import TechBoxIMG1 from '../assets/techbox1.png';
+import TechBoxIMG2 from '../assets/techbox2.png';
+import TechBoxIMG3 from '../assets/techbox3.png';
+import TechBoxIMG4 from '../assets/techbox4.png';
 
 const topBoxes = [
   { id: 0, title: 'Handle Product Complexity' },
@@ -62,10 +62,10 @@ function HomeManage() {
   // Helper function for button color based on active box
   const getButtonColor = (index) => {
     switch (index) {
-      case 0: return '#007bff';  
-      case 1: return '#dc3545';
-      case 2: return '#6c757d';  
-      case 3: return '#28a745';
+      case 0: return '#133b84';  
+      case 1: return '#235593';
+      case 2: return '#0551b0';  
+      case 3: return '#2780ee';
       default: return '#007bff';
     }
   };

@@ -31,7 +31,6 @@ function Navbar() {
         <ul className="side-menu-list">
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-          <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
           <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
 
           {/* Expandable Services Submenu */}
@@ -41,14 +40,13 @@ function Navbar() {
             </span>
             <ul className={`submenu-list ${isServicesOpen ? 'open' : ''}`}>
               <li><Link to="/services/software-development" onClick={closeMenu}>Software Development</Link></li>
-              <li><Link to="/services/web-development" onClick={closeMenu}>Web Development</Link></li>
-              <li><Link to="/services/seo" onClick={closeMenu}>SEO</Link></li>
-              <li><Link to="/services/digital-marketing" onClick={closeMenu}>Digital Marketing</Link></li>
-              <li><Link to="/services/graphic-designing" onClick={closeMenu}>Graphic Designing</Link></li>
-              <li><Link to="/services/mobile-app-development" onClick={closeMenu}>Mobile App Development</Link></li>
-              <li><Link to="/services/ui-ux-design" onClick={closeMenu}>UI UX Design</Link></li>
-              <li><Link to="/services/data-science" onClick={closeMenu}>Data Science</Link></li>
-              <li><Link to="/services/game-development" onClick={closeMenu}>Game Development</Link></li>
+<li><Link to="/services/web-development" onClick={closeMenu}>Web Development</Link></li>
+<li><Link to="/services/seo" onClick={closeMenu}>SEO</Link></li>
+<li><Link to="/services/digital-marketing" onClick={closeMenu}>Digital Marketing</Link></li>
+<li><Link to="/services/graphic-designing" onClick={closeMenu}>Graphic Designing</Link></li>
+<li><Link to="/services/ui-ux-design" onClick={closeMenu}>UI UX Design</Link></li>
+<li><Link to="/services/data-science" onClick={closeMenu}>Data Science</Link></li>
+<li><Link to="/services/game-development" onClick={closeMenu}>Game Development</Link></li>
             </ul>
           </li>
         </ul>

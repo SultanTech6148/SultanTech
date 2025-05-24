@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import TechBG from '../assets/TechPc.webp'
+import TechBG from '../assets/TechPc.png'
 
 function HomeAbout() {
   useEffect(() => {

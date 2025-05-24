@@ -4,10 +4,24 @@ import HomeAbout from '../Component/HomeAbout';
 import HomeManage from '../Component/HomeManage';
 import HomeOurServices from '../Component/HomeOurServices';
 import Footer from '../Component/Footer';
-import HomeBlog from '../Component/HomeBlog';
+import IconChangeCarousel from "../Component/IconChange-Carousel"
 
 
 function Home() {
+
+  const codingIcons = [
+  "https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=22189&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=13679&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=FIdVBOahSJu0&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=r5Y16PcDkoWI&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=40669&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000",
+  "https://img.icons8.com/?size=100&id=wpZmKzk11AzJ&format=png&color=000000"
+
+]
   return (
     <>
     <div id="Home-main-container">
@@ -30,8 +44,9 @@ function Home() {
     <HomeAfterHeader/>
     <HomeAbout/>
     <HomeOurServices/>
+          <IconChangeCarousel icons={codingIcons} interval={3000} />
+
     <HomeManage/>
-    <HomeBlog/>
     <Footer/>
     </>
   );

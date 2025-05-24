@@ -55,7 +55,6 @@ function Footer() {
             <h6>Quick Links</h6>
             <Link to="/services/software-development">Software Development</Link>
             <Link to="/services/web-development">Web Development</Link>
-            <Link to="/services/mobile-app-development">Mobile App Development</Link>
             <Link to="/services/seo">SEO</Link>
             <Link to="/services/digital-marketing">Digital Marketing</Link>
             <Link to="/services/graphic-designing">Graphic Designing</Link>
