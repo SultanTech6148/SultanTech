@@ -3207,8 +3207,8 @@ body {
   height: 100px;
   width: 100px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5px;
+  right: 5px;
   z-index: 90000;
   display: flex;
   justify-content: center;

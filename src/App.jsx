@@ -1,5 +1,6 @@
 // src/App.jsx
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -13,9 +14,34 @@ import Seo from './Pages/Services/Seo';
 import SoftwareDevelopement from './Pages/Services/Software-Developement';
 import UIUXDesign from './Pages/Services/UI-UX-Design';
 import WebDevelopement from './Pages/Services/Web-Developement';
-import Navbar from "./Navbar"; 
+
+import Navbar from "./Navbar";
 
 function App() {
+  const location = useLocation();
+
+  // Map routes to document titles
+  const titles = {
+    "/": "Sultan Tech",
+    "/about": "About Us - Sultan Tech",
+    "/contact": "Contact - Sultan Tech",
+
+    "/services/software-development": "Software Development - Sultan Tech",
+    "/services/web-development": "Web Development - Sultan Tech",
+    "/services/seo": "SEO Services - Sultan Tech",
+    "/services/digital-marketing": "Digital Marketing - Sultan Tech",
+    "/services/graphic-designing": "Graphic Designing - Sultan Tech",
+    "/services/ui-ux-design": "UI/UX Design - Sultan Tech",
+    "/services/data-science": "Data Science - Sultan Tech",
+    "/services/game-development": "Game Development - Sultan Tech",
+  };
+
+  // Update document title on route change
+  useEffect(() => {
+    const currentTitle = titles[location.pathname] || "My Website";
+    document.title = currentTitle;
+  }, [location.pathname]);
+
   return (
     <>
       <Navbar /> {/* Navbar should always be visible */}
