@@ -22,7 +22,7 @@ function App() {
 
   // Map routes to document titles
   const titles = {
-    "/": "Sultan Tech",
+    "/": "Sultan Tech - Your Vission Our Passion",
     "/about": "About Us - Sultan Tech",
     "/contact": "Contact - Sultan Tech",
 
@@ -36,10 +36,38 @@ function App() {
     "/services/game-development": "Game Development - Sultan Tech",
   };
 
-  // Update document title on route change
+  // Map routes to canonical URLs
+  const canonicalUrls = {
+    "/": "https://sultantech6148.github.io/SultanTech/",
+    "/about": "https://sultantech6148.github.io/SultanTech/about",
+    "/contact": "https://sultantech6148.github.io/SultanTech/contact",
+
+    "/services/software-development": "https://sultantech6148.github.io/SultanTech/services/software-development",
+    "/services/web-development": "https://sultantech6148.github.io/SultanTech/services/web-development",
+    "/services/seo": "https://sultantech6148.github.io/SultanTech/services/seo",
+    "/services/digital-marketing": "https://sultantech6148.github.io/SultanTech/services/digital-marketing",
+    "/services/graphic-designing": "https://sultantech6148.github.io/SultanTech/services/graphic-designing",
+    "/services/ui-ux-design": "https://sultantech6148.github.io/SultanTech/services/ui-ux-design",
+    "/services/data-science": "https://sultantech6148.github.io/SultanTech/services/data-science",
+    "/services/game-development": "https://sultantech6148.github.io/SultanTech/services/game-development",
+  };
+
+  // Update document title and canonical link on route change
   useEffect(() => {
+    // Set page title
     const currentTitle = titles[location.pathname] || "My Website";
     document.title = currentTitle;
+
+    // Set canonical link
+    const canonicalUrl = canonicalUrls[location.pathname] || "https://yourdomain.com";
+
+    let link = document.querySelector("link[rel='canonical']");
+    if (!link) {
+      link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      document.head.appendChild(link);
+    }
+    link.setAttribute("href", canonicalUrl);
   }, [location.pathname]);
 
   return (

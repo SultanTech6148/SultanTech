@@ -7,20 +7,24 @@ function Footer() {
 
   const icons = {
     fb: {
+      url: 'https://www.facebook.com/share/15pYMnFMKz/',
       default: 'https://img.icons8.com/?size=100&id=8818&format=png&color=FFFFFF',
       hover: 'https://img.icons8.com/?size=100&id=8818&format=png&color=007bff',
     },
     insta: {
+      url: 'https://www.instagram.com/p/DKHh94aN22i/?utm_source=ig_web_copy_link',
       default: 'https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=FFFFFF',
       hover: 'https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=007bff',
     },
     linkedin: {
+      url: '#',
       default: 'https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF',
       hover: 'https://img.icons8.com/?size=100&id=8808&format=png&color=007bff',
     },
-    threads: {
-      default: 'https://img.icons8.com/?size=100&id=AS2a6aA9BwK3&format=png&color=FFFFFF',
-      hover: 'https://img.icons8.com/?size=100&id=AS2a6aA9BwK3&format=png&color=007bff',
+    whatsapp: {
+      url: 'https://whatsapp.com/channel/0029Vb6GXOW2P59kXow2tz1q',
+      default: 'https://img.icons8.com/?size=100&id=16733&format=png&color=FFFFFF',
+      hover: 'https://img.icons8.com/?size=100&id=16733&format=png&color=007bff',
     },
   };
 
@@ -35,8 +39,10 @@ function Footer() {
             <div id="footer-social-main-container">
               {Object.keys(icons).map((key) => (
                 <a
-                  href="#"
+                  href={icons[key].url}
                   key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onMouseEnter={() => setHoveredIcon(key)}
                   onMouseLeave={() => setHoveredIcon(null)}
                 >
